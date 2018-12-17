@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Convertidor</string>
+    <string name="introduzca_cantidad">Introduzca cantidad:</string>
+    <string name="Euros">Euros</string>
+    <string name="eu">€</string>
+    <string name="convertir1">Convertir a euros</string>
+    <string name="convertir2">Convertir a Dolares</string>
+    <string name="resultado">Resultado</string>
+    <string name="usd">USD</string>
+    <string name="$">$</string>
+    <string name="borrar1">Convertir Dolares-Euros</string>
+    <string name="borrar2">Convertir Euros-Dolares</string>
+    <string name="borrar3">Borrar</string>
+    <string name="title_activity_main_activity2">MainActivity2</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/tv_euros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/et_cantidad"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@+id/et_cantidad"
+        android:text="@string/Euros" />
+
+    <TextView
+        android:id="@+id/tv_int_cantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="84dp"
+        android:text="@string/introduzca_cantidad" />
+
+    <EditText
+        android:id="@+id/et_cantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_int_cantidad"
+        android:layout_alignRight="@+id/tv_int_cantidad"
+        android:layout_below="@+id/tv_int_cantidad"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_eu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_euros"
+        android:layout_alignBottom="@+id/tv_euros"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/et_cantidad"
+        android:text="@string/eu" />
+
+    <Button
+        android:id="@+id/bt_convertir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_cantidad"
+        android:layout_marginTop="28dp"
+        android:layout_toRightOf="@+id/tv_USD"
+        android:text="@string/convertir2" />
+
+    <TextView
+        android:id="@+id/tv_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_convertir"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="@string/resultado" />
+
+    <TextView
+        android:id="@+id/tv_USD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tv_euros"
+        android:layout_below="@+id/tv_resultado"
+        android:layout_marginTop="25dp"
+        android:text="@string/usd" />
+
+    <EditText
+        android:id="@+id/et_dolares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_USD"
+        android:layout_alignBottom="@+id/tv_USD"
+        android:layout_toLeftOf="@+id/tv_eu"
+        android:layout_toRightOf="@+id/tv_euros"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/tv_$"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/et_dolares"
+        android:layout_alignLeft="@+id/tv_eu"
+        android:text="@string/$" />
+
+    <Button
+        android:id="@+id/b_conversor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_euros"
+        android:layout_below="@+id/et_dolares"
+        android:layout_marginTop="17dp"
+        android:text="@string/borrar1" />
+
+    <Button
+        android:id="@+id/b_borrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tv_resultado"
+        android:layout_below="@+id/b_conversor"
+        android:text="@string/borrar3" />
+
+</RelativeLayout>
